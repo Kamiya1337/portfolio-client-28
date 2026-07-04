@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evidence - Academic Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#feebfe",
+                        "error": "#ba1a1a",
+                        "tertiary": "#6b5376",
+                        "on-tertiary-fixed-variant": "#543f5f",
+                        "on-tertiary-fixed": "#271331",
+                        "on-secondary-fixed": "#1f182b",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e6dbf5",
+                        "on-secondary-container": "#675f75",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#836d8a",
+                        "on-surface": "#221825",
+                        "secondary": "#635b71",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#53405a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#e6d5e7",
+                        "secondary-fixed-dim": "#cdc2dc",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container": "#fbe8fb",
+                        "on-secondary-fixed-variant": "#4b4358",
+                        "secondary-fixed": "#e9def8",
+                        "surface-container-low": "#ffefff",
+                        "outline-variant": "#cdc4cc",
+                        "outline": "#7c757c",
+                        "tertiary-fixed-dim": "#d9bde4",
+                        "on-background": "#221825",
+                        "primary-fixed": "#f4dafb",
+                        "inverse-primary": "#d8bede",
+                        "surface-tint": "#6c5773",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#f5d9ff",
+                        "on-primary-container": "#fffbff",
+                        "inverse-surface": "#382d3b",
+                        "surface-variant": "#efddf0",
+                        "on-surface-variant": "#4b454c",
+                        "tertiary-container": "#846c8f",
+                        "primary-fixed-dim": "#d8bede",
+                        "background": "#fff7fb",
+                        "surface-container-highest": "#efddf0",
+                        "surface-bright": "#fff7fb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#25152d",
+                        "primary": "#695570",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#f5e3f6",
+                        "surface": "#fff7fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "stack-md": "24px",
+                        "base": "8px",
+                        "stack-sm": "12px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Libre Franklin"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-md": ["Libre Franklin"],
+                        "body-md": ["Libre Franklin"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-tab-indicator {
+            position: absolute;
+            right: 0;
+            top: 10%;
+            height: 80%;
+            width: 4px;
+            background-color: #f4dafb;
+            border-radius: 2px 0 0 2px;
+        }
+        table { border-collapse: separate; border-spacing: 0 12px; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- SideNavBar Component -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface dark:bg-surface-container-lowest flex flex-col h-full py-8 px-4 gap-base shadow-sm z-50">
+<!-- Header Branding -->
+<div class="px-4 mb-8">
+<h1 class="font-headline-md text-headline-md text-primary-fixed dark:text-primary-fixed-dim tracking-tight">Portfolio</h1>
+<p class="font-label-md text-label-md text-surface-variant/60 mt-1">ACADEMIC YEAR 2025–26</p>
+</div>
+<!-- Student Profile -->
+<div class="px-4 mb-10 flex flex-col gap-1">
+<div class="w-12 h-12 bg-primary-container rounded-full mb-3 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a young academic student, Julian Sterling, with a soft editorial lighting style. The background is a muted dusty mauve, consistent with a high-end educational portfolio aesthetic. The student wears a refined dark charcoal sweater, looking towards the camera with a confident yet calm expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD7ZofepMPfiZf8kE6_gAFYA8otrBnRVt_mlL_y20YFnjQeOZCxcBbKiqBQqaGqd9KuuXsHKd3fWuDK51pLMv-4lpFx19kgfWV19jpWTjj9GeUpFzqScdYZCGQrTI854cwWrV2rZmHi8OM8rG07EJQFacx2IqE7Tqq7DOPjsZ2pFhvy4PD4HSY9GHxmJwyl0BGuk0itjJXS2Mk4JMD6kEQL10s7xA9A87gJ_8QTrtzLszfnnlcnz4Zn5Gr2P83a37tY7thSXiXIgKr"/>
+</div>
+<h2 class="font-headline-sm text-[18px] text-on-primary-fixed">Julian Sterling</h2>
+<p class="font-label-md text-label-md text-surface-variant/80">MA Comparative Literature</p>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 flex flex-col gap-2">
+<!-- Overview -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-surface-variant/80 dark:text-on-surface-variant hover:bg-primary-container/10 transition-colors group" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Overview</span>
+</a>
+<!-- Assignments -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-surface-variant/80 dark:text-on-surface-variant hover:bg-primary-container/10 transition-colors group" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-md text-label-md">Assignments</span>
+</a>
+<!-- Evidence (ACTIVE) -->
+<a class="relative flex items-center gap-3 px-4 py-3 rounded-lg text-primary-fixed dark:text-on-primary-fixed bg-primary-container/20 dark:bg-primary-container font-bold scale-[0.98] transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-label-md text-label-md">Evidence</span>
+<div class="active-tab-indicator"></div>
+</a>
+<!-- Rubric -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-surface-variant/80 dark:text-on-surface-variant hover:bg-primary-container/10 transition-colors group" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="font-label-md text-label-md">Rubric</span>
+</a>
+<!-- Reflection -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-surface-variant/80 dark:text-on-surface-variant hover:bg-primary-container/10 transition-colors group" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-label-md text-label-md">Reflection</span>
+</a>
+</nav>
+<!-- CTA & Footer -->
+<div class="mt-auto px-4 flex flex-col gap-4">
+<button class="w-full bg-primary-fixed text-on-primary-fixed py-3 rounded-lg font-label-md hover:opacity-90 transition-opacity">
+                Download CV
+            </button>
+<a class="flex items-center gap-3 px-4 py-3 text-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">archive</span>
+<span class="font-label-md text-label-md">Archive</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pl-64 min-h-screen">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-40 bg-surface dark:bg-surface-dim border-b border-outline-variant/30 flex justify-between items-center w-full px-margin-desktop py-4 h-20">
+<div class="flex items-center gap-base">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Academic Portfolio</span>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex gap-6">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-all" href="#">Archive</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-all" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-error rounded-full"></span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">settings</span>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-stack-lg">
+<!-- Page Header Section -->
+<section class="mb-stack-lg">
+<span class="font-label-md text-label-md tracking-widest text-primary uppercase mb-2 block">SUBMISSION REPOSITORY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface max-w-3xl mb-base leading-tight">
+                    A curated archive of academic milestones.
+                </h2>
+<div class="flex items-start gap-4 border-l-2 border-primary-container/30 pl-6 mt-stack-md">
+<p class="font-body-md text-on-surface-variant italic max-w-2xl leading-relaxed">
+                        Bảng tổng hợp giữ nguyên báo cáo, hình ảnh minh chứng, liên kết tài nguyên và trạng thái thực tế của từng bài tập.
+                    </p>
+</div>
+</section>
+<!-- Evidence Table Container -->
+<section class="bg-surface-variant/30 rounded-xl p-8 border border-outline-variant/30 mb-stack-lg shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="border-b border-outline-variant/40">
+<tr>
+<th class="pb-6 font-label-md text-label-md text-primary uppercase tracking-wider">ASSIGNMENT</th>
+<th class="pb-6 font-label-md text-label-md text-primary uppercase tracking-wider text-center">REPORT FILE</th>
+<th class="pb-6 font-label-md text-label-md text-primary uppercase tracking-wider text-center">EVIDENCE IMAGE</th>
+<th class="pb-6 font-label-md text-label-md text-primary uppercase tracking-wider text-center">RESOURCE LINK</th>
+<th class="pb-6 font-label-md text-label-md text-primary uppercase tracking-wider text-right">STATUS</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<!-- Row 1 -->
+<tr class="group">
+<td class="py-8 pr-4">
+<h4 class="font-headline-sm text-[20px] text-on-surface font-semibold mb-1 group-hover:text-primary transition-colors">Bài 1: Máy tính và quản lý tệp/thư mục</h4>
+<span class="font-label-md text-label-md text-on-surface-variant/60">CHƯƠNG 1 &amp; 2</span>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        XEM BÁO CÁO <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        XEM ẢNH <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        MỞ DRIVE <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</td>
+<td class="py-8 text-right">
+<span class="inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary-container/20 text-on-primary-fixed font-bold rounded-full text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> ĐÃ NỘP
+                                    </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="group">
+<td class="py-8 pr-4">
+<h4 class="font-headline-sm text-[20px] text-on-surface font-semibold mb-1 group-hover:text-primary transition-colors">Bài 2: Khai thác dữ liệu và đánh giá thông tin</h4>
+<span class="font-label-md text-label-md text-on-surface-variant/60">CHƯƠNG 2</span>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        XEM BÁO CÁO <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        XEM ẢNH <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        MỞ DRIVE <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</td>
+<td class="py-8 text-right">
+<span class="inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary-container/20 text-on-primary-fixed font-bold rounded-full text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> ĐÃ NỘP
+                                    </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="group">
+<td class="py-8 pr-4">
+<h4 class="font-headline-sm text-[20px] text-on-surface font-semibold mb-1 group-hover:text-primary transition-colors">Bài 3: Viết prompt hiệu quả và sử dụng AI</h4>
+<span class="font-label-md text-label-md text-on-surface-variant/60">CHƯƠNG 3</span>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        XEM BÁO CÁO <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        XEM ẢNH <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</td>
+<td class="py-8 text-center">
+<button class="inline-flex items-center gap-2 px-4 py-2 border border-outline-variant hover:border-primary hover:text-primary transition-all rounded text-label-md">
+                                        MỞ DRIVE <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</td>
+<td class="py-8 text-right">
+<span class="inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary-container/20 text-on-primary-fixed font-bold rounded-full text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> ĐÃ NỘP
+                                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Bottom Stats & Callout Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-stretch">
+<!-- Archive Summary -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-stack-md border border-outline-variant/20 flex flex-col justify-between">
+<div>
+<h5 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-wider">Archive Summary</h5>
+<div class="flex gap-12 mt-4">
+<div>
+<p class="text-[40px] font-headline-md text-on-surface leading-none">12</p>
+<p class="font-label-md text-on-surface-variant mt-2">Total Files</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-12">
+<p class="text-[40px] font-headline-md text-on-surface leading-none">OCT 24</p>
+<p class="font-label-md text-on-surface-variant mt-2">Last Update</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-on-surface-variant font-label-md italic">Verifying academic integrity protocol...</span>
+<span class="material-symbols-outlined text-primary-fixed-dim">verified</span>
+</div>
+</div>
+<!-- Callout Image & Quote -->
+<div class="md:col-span-5 relative rounded-xl overflow-hidden group min-h-[300px]">
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="A sophisticated academic-themed image showing a close-up of vintage parchment paper and a modern glass fountain pen resting on a dark wood desk. The lighting is low and atmospheric, casting long, soft shadows. The color palette is dominated by rich deep plums and warm sepia tones, creating a mood of intellectual focus and timeless archival quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2RrEVmf7xje7HDCpYJopMO7VKRouL0g3h6BIy2xumqh0UDa0MRuTNBETyQ8vh0LJ78UrPOTKDTEazXE8KtWEicqsDpmiQxJPCdP9nNC9ig1p_7nWhWaIV43Vhd0vQ9aLmtHQiL33Gzh312dCaFM7OELrpyZX4ShaVc6NDItL170Wgb7opEs3GxSLUVEWtUS-0u6d_y4koTaGpQZe20Dduf-RBHA5kLi34Utud2iDP9t_esv_t37jJ0mC2lRIn6IAeLy3f6EOv3-j"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent z-10 p-stack-md flex flex-col justify-end">
+<p class="font-headline-sm text-surface-bright leading-snug italic mb-2">"Preserving the process is as vital as the result."</p>
+<p class="font-label-md text-primary-fixed-dim tracking-widest uppercase text-xs">— ARCHIVAL MANDATE</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-stack-lg bg-surface-container-low border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center px-margin-desktop py-stack-md">
+<div class="flex flex-col gap-1 mb-4 md:mb-0">
+<span class="font-headline-sm text-headline-sm text-primary">Academic Portfolio</span>
+<p class="font-body-md text-on-surface-variant text-sm">© 2024 Institutional Archives. All Rights Reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Help Desk</a>
+</div>
+</footer>
+</main>
+<script>
+        // Micro-interaction for table rows
+        document.querySelectorAll('tbody tr').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.transform = 'translateX(4px)';
+                row.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+</body></html>

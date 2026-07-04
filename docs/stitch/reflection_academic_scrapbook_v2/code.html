@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reflection | Academic Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Libre+Franklin:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-on-surface": "#feebfe",
+                "error": "#ba1a1a",
+                "tertiary": "#6b5376",
+                "on-tertiary-fixed-variant": "#543f5f",
+                "on-tertiary-fixed": "#271331",
+                "on-secondary-fixed": "#1f182b",
+                "error-container": "#ffdad6",
+                "secondary-container": "#e6dbf5",
+                "on-secondary-container": "#675f75",
+                "on-error-container": "#93000a",
+                "primary-container": "#836d8a",
+                "on-surface": "#221825",
+                "secondary": "#635b71",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#53405a",
+                "surface-container-lowest": "#ffffff",
+                "surface-dim": "#e6d5e7",
+                "secondary-fixed-dim": "#cdc2dc",
+                "on-tertiary-container": "#fffbff",
+                "surface-container": "#fbe8fb",
+                "on-secondary-fixed-variant": "#4b4358",
+                "secondary-fixed": "#e9def8",
+                "surface-container-low": "#ffefff",
+                "outline-variant": "#cdc4cc",
+                "outline": "#7c757c",
+                "tertiary-fixed-dim": "#d9bde4",
+                "on-background": "#221825",
+                "primary-fixed": "#f4dafb",
+                "inverse-primary": "#d8bede",
+                "surface-tint": "#6c5773",
+                "on-error": "#ffffff",
+                "tertiary-fixed": "#f5d9ff",
+                "on-primary-container": "#fffbff",
+                "inverse-surface": "#382d3b",
+                "surface-variant": "#efddf0",
+                "on-surface-variant": "#4b454c",
+                "tertiary-container": "#846c8f",
+                "primary-fixed-dim": "#d8bede",
+                "background": "#fff7fb",
+                "surface-container-highest": "#efddf0",
+                "surface-bright": "#fff7fb",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#25152d",
+                "primary": "#695570",
+                "on-secondary": "#ffffff",
+                "surface-container-high": "#f5e3f6",
+                "surface": "#fff7fb"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "margin-desktop": "64px",
+                "margin-mobile": "16px",
+                "stack-md": "24px",
+                "base": "8px",
+                "stack-sm": "12px",
+                "stack-lg": "48px",
+                "gutter": "24px",
+                "container-max": "1200px"
+            },
+            "fontFamily": {
+                "headline-sm": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "headline-lg": ["Playfair Display"],
+                "body-lg": ["Libre Franklin"],
+                "headline-lg-mobile": ["Playfair Display"],
+                "display-lg": ["Playfair Display"],
+                "label-md": ["Libre Franklin"],
+                "body-md": ["Libre Franklin"]
+            },
+            "fontSize": {
+                "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff7fb; /* Pale Blush Background */
+            color: #221825; /* Deep Plum */
+        }
+        .archival-border {
+            border-bottom: 1px solid #cdc4cc; /* Muted Mauve */
+        }
+        .nav-item-active {
+            position: relative;
+        }
+        .nav-item-active::after {
+            content: '';
+            position: absolute;
+            right: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background-color: #f4dafb;
+            border-radius: 2px;
+        }
+        .reflection-card {
+            background-color: #e8e6f0; /* Pale Lavender Pink Surface */
+            border: 1px solid #cdc4cc; /* Muted Mauve */
+        }
+    </style>
+</head>
+<body class="flex min-h-screen">
+<!-- Predicted Component: SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface flex flex-col py-8 px-4 gap-base z-50">
+<div class="mb-stack-lg">
+<h1 class="font-headline-md text-headline-md text-primary-fixed">Portfolio</h1>
+<p class="font-label-md text-label-md text-surface-variant/60 uppercase tracking-widest mt-2">Academic Year 2025-26</p>
+</div>
+<div class="mb-stack-lg">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sophisticated academic portrait of a student in professional attire, soft library lighting, high-end editorial photography style with muted mauve and deep plum color tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxdCxF3VHhEc9fXbAtENC94e4XXwEmTsQUaqPOZK2C7P_FVFmHBNg0dd_D-9Bvus9qPgIE1T_zemI82Wkrgonm1GyDhSK_sFGjO-FfUc86Hb9khvJ_0Gnatm-31KLWK3eCOlKpO_G5ZzJg9pbP6PxkXZVpPj1OzQQ0X5ziWWCkBDoDdSKIGJbuCdqJa6QWrowNW2z0GRDajq7HZQ9KvrPYwew_VfNl5n1ghOTA9GEAELDfvqRZiuraUI9G1-vWRAIxazS5ujrB0D4_"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary-fixed leading-tight">Julian Sterling</p>
+<p class="text-[10px] text-surface-variant/70 uppercase">MA Comparative Lit</p>
+</div>
+</div>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<!-- Navigation Items Mapping from JSON -->
+<a class="flex items-center gap-3 px-3 py-2 text-surface-variant/80 hover:bg-primary-container/10 transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">dashboard</span>
+                01 Overview
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-surface-variant/80 hover:bg-primary-container/10 transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">assignment</span>
+                02 Assignments
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-surface-variant/80 hover:bg-primary-container/10 transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">history_edu</span>
+                03 Evidence
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-surface-variant/80 hover:bg-primary-container/10 transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">list_alt</span>
+                04 Rubric
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-primary-fixed bg-primary-container/20 font-bold font-label-md text-label-md nav-item-active" href="#">
+<span class="material-symbols-outlined">psychology</span>
+                05 Reflection
+            </a>
+</nav>
+<div class="mt-auto border-t border-outline-variant/10 pt-4">
+<a class="flex items-center gap-3 px-3 py-2 text-surface-variant/80 hover:bg-primary-container/10 transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">archive</span>
+                Archive
+            </a>
+<div class="mt-stack-md">
+<button class="w-full bg-primary py-2 px-4 text-on-primary font-label-md text-label-md rounded hover:opacity-90 transition-opacity">Download CV</button>
+</div>
+<p class="text-[10px] text-surface-variant/40 mt-8 uppercase tracking-widest text-center">Editorial Academic Archive</p>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-grow ml-64 min-h-screen flex flex-col">
+<!-- Predicted Component: TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-desktop py-4 bg-surface archival-border sticky top-0 z-40">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Portfolio Index</span>
+<span class="text-[10px] font-label-md text-outline uppercase tracking-[0.2em]">Reflection / Tổng Kết</span>
+</div>
+<div class="flex items-center gap-gutter">
+<nav class="hidden md:flex gap-stack-md items-center">
+<a class="text-on-surface-variant font-medium font-body-md hover:text-primary transition-all" href="#">Archive</a>
+<a class="text-on-surface-variant font-medium font-body-md hover:text-primary transition-all" href="#">Resources</a>
+</nav>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-stack-sm">
+<button class="p-2 text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Reflection Content Section -->
+<div class="max-w-[1200px] mx-auto w-full px-margin-desktop py-16 flex flex-col items-center">
+<!-- Hero Title Block -->
+<div class="text-center mb-16 animate-fade-in">
+<span class="font-label-md text-label-md text-primary uppercase tracking-[0.3em] mb-4 block">05 Reflection</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-6">Tổng kết &amp; Suy ngẫm</h1>
+<p class="italic font-headline-sm text-headline-sm text-outline max-w-2xl mx-auto opacity-70">
+                    "Nhìn lại hành trình học tập, những khó khăn đã trải qua và cam kết hoàn thiện Portfolio một cách trung thực."
+                </p>
+</div>
+<div class="grid grid-cols-12 gap-gutter w-full">
+<!-- Main Narrative -->
+<div class="col-span-8 space-y-stack-lg">
+<div class="reflection-card p-10 rounded shadow-sm relative">
+<span class="absolute -left-12 top-0 font-display-lg text-display-lg text-primary-fixed-dim/40 select-none">01</span>
+<header class="mb-8">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-2 block">Kiến Thức</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Kiến thức &amp; Kỹ năng đã đạt được</h2>
+</header>
+<div class="font-body-lg text-body-lg text-on-surface-variant space-y-6 leading-relaxed">
+<p>
+                                "Ban đầu, em nghĩ làm portfolio chỉ đơn giản là gom các bài đã làm rồi đưa lên một trang web cho đủ. Nhưng khi bắt tay vào làm thật, em mới nhận ra nếu chỉ để file lên thì sản phẩm nhìn khá rời rạc, người xem cũng khó thấy được quá trình học và sự thay đổi của bản thân qua từng bài."
+                            </p>
+<p>
+                                Thông qua học phần này, em biết cách sắp xếp tài liệu có hệ thống hơn, đặt tên file rõ ràng hơn và chia nội dung theo từng bài, từng phần để dễ theo dõi. Em cũng hiểu thêm về việc tìm kiếm thông tin, chọn lọc nguồn và sử dụng AI trong học tập một cách có kiểm soát hơn. Trước đây em thường hỏi AI khá tùy hứng, nghĩ gì hỏi đó, nhưng sau phần bài tập này em biết cách đặt câu hỏi có cấu trúc hơn để lấy được kết quả sát nhất với yêu cầu.
+                            </p>
+</div>
+<!-- Sidebar Callout (Integrated) -->
+<div class="mt-12 p-6 bg-surface-container border-l-4 border-primary rounded-r">
+<h4 class="font-label-md text-label-md text-primary uppercase mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+                                Ghi chú bên lề
+                            </h4>
+<p class="font-body-md text-body-md italic text-on-tertiary-fixed-variant">
+                                Việc tổ chức dữ liệu không chỉ là để trình bày, mà còn là một hình thức rèn luyện tư duy logic. Mỗi danh mục trong portfolio phản ánh một mảng kiến thức đã được tiêu hóa và sắp xếp lại theo hệ thống riêng của người học.
+                            </p>
+</div>
+</div>
+<!-- Decorative Section Divider -->
+<div class="flex justify-center py-8">
+<div class="w-24 h-px bg-outline-variant"></div>
+</div>
+</div>
+<!-- Metadata/Sidebar Information -->
+<aside class="col-span-4 space-y-stack-md">
+<div class="p-8 border border-outline-variant bg-white/50 backdrop-blur-sm sticky top-24">
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-[0.2em] mb-6 archival-border pb-2">Thông Tin Lưu Trữ</h3>
+<div class="space-y-6">
+<div>
+<label class="block text-[10px] text-outline uppercase font-bold mb-1">Ngày ghi chú</label>
+<p class="font-body-md text-body-md text-on-surface">24 Tháng 05, 2024</p>
+</div>
+<div>
+<label class="block text-[10px] text-outline uppercase font-bold mb-1">Học kỳ</label>
+<p class="font-body-md text-body-md text-on-surface">Học kỳ II - 2023-2024</p>
+</div>
+<div>
+<label class="block text-[10px] text-outline uppercase font-bold mb-1">Trạng thái</label>
+<div class="flex items-center gap-2 mt-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary uppercase">Hoàn tất lưu trữ</span>
+</div>
+</div>
+</div>
+<div class="mt-10 pt-6 border-t border-outline-variant/30">
+<div class="p-4 bg-tertiary-container/10 border border-tertiary-container/30 rounded-sm">
+<p class="text-xs text-on-surface-variant italic mb-0">
+                                    "Portfolio này là minh chứng cho sự nỗ lực không ngừng và sự minh bạch trong học thuật."
+                                </p>
+</div>
+</div>
+</div>
+<!-- Subtle Visual Element -->
+<div class="h-48 overflow-hidden rounded grayscale opacity-80 border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of high-quality aged cream-colored paper with a subtle fiber texture, warm editorial lighting, clean and minimalist composition, evocative of a prestigious archive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5wNUkgEh7dNoSutgNC8jqSPSOYrBmldPdh_5v8rVQLIJIkHPz6ynqab4u1sT6QaSvH6aBKY0rFI81ppsUySuVgnzEOeEaSIwja2GrCFg1dcYXK2rTaki2PMuN-6i7fnVTXritBI399NQ67KBb8XfdsiupIz0WtsiqQFD43WiVBbo4EM2A2sndYGn6tdFXAeQiDjpGr5D5B7usliJeypg-hZ9EKaG1I1-Xg43u0vTvw2mRLZ47SaGRAtLoobxxVeFHczpaA8PePRO5"/>
+</div>
+</aside>
+</div>
+</div>
+<!-- Predicted Component: Footer -->
+<footer class="w-full py-stack-md mt-auto border-t border-outline-variant/20 bg-surface-container-low archival-border">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop">
+<div class="mb-4 md:mb-0">
+<span class="font-headline-sm text-headline-sm text-primary">Academic Portfolio</span>
+</div>
+<div class="flex flex-wrap justify-center gap-stack-md text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Help Desk</a>
+</div>
+<div class="mt-4 md:mt-0 font-body-md text-body-md text-outline">
+                    © 2024 Institutional Archives. All Rights Reserved.
+                </div>
+</div>
+</footer>
+</main>
+<script>
+        // Micro-interaction for hover effects on navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('mousedown', function() {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+
+        // Simple scroll observer for content appearance
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reflection-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(card);
+        });
+    </script>
+</body></html>

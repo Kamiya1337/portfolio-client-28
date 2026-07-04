@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marketing &amp; Communication Portfolio | Đinh Thái Sơn</title>
+<!-- Google Fonts: Playfair Display & Libre Franklin -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Libre+Franklin:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#feebfe",
+                        "error": "#ba1a1a",
+                        "tertiary": "#6b5376",
+                        "on-tertiary-fixed-variant": "#543f5f",
+                        "on-tertiary-fixed": "#271331",
+                        "on-secondary-fixed": "#1f182b",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e6dbf5",
+                        "on-secondary-container": "#675f75",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#836d8a",
+                        "on-surface": "#221825",
+                        "secondary": "#635b71",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#53405a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#e6d5e7",
+                        "secondary-fixed-dim": "#cdc2dc",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container": "#fbe8fb",
+                        "on-secondary-fixed-variant": "#4b4358",
+                        "secondary-fixed": "#e9def8",
+                        "surface-container-low": "#ffefff",
+                        "outline-variant": "#cdc4cc",
+                        "outline": "#7c757c",
+                        "tertiary-fixed-dim": "#d9bde4",
+                        "on-background": "#221825",
+                        "primary-fixed": "#f4dafb",
+                        "inverse-primary": "#d8bede",
+                        "surface-tint": "#6c5773",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#f5d9ff",
+                        "on-primary-container": "#fffbff",
+                        "inverse-surface": "#382d3b",
+                        "surface-variant": "#efddf0",
+                        "on-surface-variant": "#4b454c",
+                        "tertiary-container": "#846c8f",
+                        "primary-fixed-dim": "#d8bede",
+                        "background": "#fff7fb",
+                        "surface-container-highest": "#efddf0",
+                        "surface-bright": "#fff7fb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#25152d",
+                        "primary": "#695570",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#f5e3f6",
+                        "surface": "#fff7fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "stack-md": "24px",
+                        "base": "8px",
+                        "stack-sm": "12px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Libre Franklin"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-md": ["Libre Franklin"],
+                        "body-md": ["Libre Franklin"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .active-tab-indicator {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background-color: currentColor;
+            border-radius: 2px 0 0 2px;
+        }
+        .editorial-shadow {
+            box-shadow: 0 4px 20px rgba(53, 42, 56, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Side Navigation Bar -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface flex flex-col py-8 px-4 gap-base z-50">
+<div class="mb-12 px-2">
+<h1 class="font-headline-md text-headline-md text-primary-fixed">Portfolio</h1>
+<p class="font-label-md text-label-md text-outline-variant mt-1 tracking-widest">CLASS OF 2024</p>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<div class="px-2 mb-6">
+<p class="font-label-md text-label-md text-outline-variant/60">Đinh Thái Sơn</p>
+<p class="font-label-md text-label-md text-outline-variant/60">Marketing và Truyền thông</p>
+<p class="font-label-md text-label-md text-outline-variant/60">HSB - VNU</p>
+</div>
+<!-- Nav Items -->
+<a class="group relative flex items-center gap-3 py-3 px-4 rounded transition-all text-primary-fixed bg-primary-container/20 font-bold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-md text-label-md">01 Overview</span>
+<div class="active-tab-indicator"></div>
+</a>
+<a class="group flex items-center gap-3 py-3 px-4 rounded transition-colors text-surface-variant/80 hover:bg-primary-container/10" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-md text-label-md">02 Assignments</span>
+</a>
+<a class="group flex items-center gap-3 py-3 px-4 rounded transition-colors text-surface-variant/80 hover:bg-primary-container/10" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-label-md text-label-md">03 Evidence</span>
+</a>
+<a class="group flex items-center gap-3 py-3 px-4 rounded transition-colors text-surface-variant/80 hover:bg-primary-container/10" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="font-label-md text-label-md">04 Rubric</span>
+</a>
+<a class="group flex items-center gap-3 py-3 px-4 rounded transition-colors text-surface-variant/80 hover:bg-primary-container/10" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-label-md text-label-md">05 Reflection</span>
+</a>
+</div>
+<div class="mt-auto border-t border-outline-variant/10 pt-6 px-2">
+<p class="font-label-md text-label-md text-outline-variant/40 tracking-widest uppercase mb-4">Editorial Archive</p>
+<a class="group flex items-center gap-3 py-2 text-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">archive</span>
+<span class="font-label-md text-label-md">Archive</span>
+</a>
+</div>
+</aside>
+<!-- Top App Bar -->
+<header class="fixed top-0 right-0 left-64 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 z-40">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Portfolio Index</h2>
+<div class="flex gap-2 items-center mt-0.5">
+<span class="font-label-md text-label-md text-primary uppercase tracking-tighter">Overview</span>
+<span class="text-outline-variant text-[10px]">/</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-tighter">Tổng Quan</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex gap-4">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">Resources</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all" href="#">Help</a>
+</div>
+<div class="flex items-center gap-3 border-l border-outline-variant/30 pl-6">
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-24 pb-stack-lg px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Left Column: Intro & Modules -->
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-stack-lg">
+<!-- Hero Section -->
+<section class="flex flex-col gap-6">
+<span class="font-label-md text-label-md text-primary tracking-[0.2em] uppercase">Overview / Tổng Quan</span>
+<h1 class="font-headline-lg text-headline-lg text-primary max-w-2xl leading-none">
+                            Marketing &amp; Communication Portfolio
+                        </h1>
+<!-- Featured Action Card -->
+<div class="bg-inverse-surface text-on-primary-container p-stack-lg rounded-lg editorial-shadow relative overflow-hidden mt-4">
+<!-- Subtle Background Texture Pattern -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+<p class="font-headline-sm text-headline-sm text-surface relative z-10 leading-snug">
+                                Danh mục hồ sơ năng lực thực tế về chiến lược truyền thông và giải pháp Marketing sáng tạo.
+                            </p>
+<div class="flex flex-wrap gap-4 mt-8 relative z-10">
+<button class="bg-primary hover:bg-on-tertiary-fixed-variant transition-colors text-white px-8 py-3 rounded flex items-center gap-2 group">
+<span class="font-label-md text-label-md uppercase">Mục Bài Tập</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-outline-variant/30 hover:bg-surface-variant/10 transition-colors text-surface px-8 py-3 rounded flex items-center gap-2">
+<span class="font-label-md text-label-md uppercase">Minh Chứng</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">description</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="bg-surface-container-low border-l-4 border-primary p-gutter">
+<blockquote class="italic font-headline-sm text-headline-sm text-on-surface-variant opacity-80 leading-relaxed">
+                            "Strategy becomes credible when it is documented, reviewed, and reflected upon."
+                        </blockquote>
+</section>
+<!-- Module Explorer (Bento Grid Style) -->
+<section>
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-widest mb-6">Module Explorer</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Module 01 -->
+<div class="bg-surface-container-low p-6 border border-outline-variant/30 rounded-lg hover:border-primary transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="font-display-lg text-primary/10 group-hover:text-primary/20 transition-colors">01</span>
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Coursework</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Hồ sơ các học phần, bài thảo luận và dự án nhóm trong chương trình đào tạo.</p>
+</div>
+<!-- Module 02 -->
+<div class="bg-surface-container-low p-6 border border-outline-variant/30 rounded-lg hover:border-primary transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="font-display-lg text-primary/10 group-hover:text-primary/20 transition-colors">02</span>
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Evidence</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Chứng chỉ, kết quả thực tập và các sản phẩm truyền thông thực tế đã triển khai.</p>
+</div>
+<!-- Module 03 -->
+<div class="bg-surface-container-low p-6 border border-outline-variant/30 rounded-lg hover:border-primary transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="font-display-lg text-primary/10 group-hover:text-primary/20 transition-colors">03</span>
+<span class="material-symbols-outlined text-primary">palette</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Creative</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Bộ sưu tập các thiết kế, ấn phẩm sáng tạo và kịch bản truyền thông đa phương tiện.</p>
+</div>
+<!-- Module 04 -->
+<div class="bg-surface-container-low p-6 border border-outline-variant/30 rounded-lg hover:border-primary transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="font-display-lg text-primary/10 group-hover:text-primary/20 transition-colors">04</span>
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Reflections</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Những đúc kết cá nhân và định hướng phát triển sự nghiệp trong tương lai.</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Profile & Stats -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-stack-lg">
+<!-- Student Profile Block -->
+<div class="bg-surface-container border border-outline-variant/50 rounded-xl overflow-hidden editorial-shadow sticky top-32">
+<div class="p-4">
+<div class="aspect-square w-full bg-surface-dim rounded-lg overflow-hidden border border-outline-variant/30">
+<img alt="Student Profile Photo" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLv2H7XYZ4F_QnczQoTfw1ZYiK79XCK1CJX28vS2dmszKbyOorXvaEc0TjRreaCInpDIexwi9tmAT8wt1bqYwpPYZ54WxiEUF6t-7FsRY2LINbFOrGNRwvkJn_fP6H5HTUdBC6HSf0DfPBnbZJO7pPUVRXsJO3roVlZ_aYN_1iDiUb1X9LUZ-0Zw88Y-nR6TTXIeCO8v3m_-oZe0riFuQ6sLCVODgZ9vhpWRpbLZl8TPefM9dc3XHzTkYYmo"/>
+</div>
+</div>
+<div class="p-8 pt-4 flex flex-col gap-6">
+<div>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-1 block">Portfolio Owner</span>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-tight">Đinh Thái Sơn</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div>
+<span class="font-label-md text-label-md text-primary uppercase tracking-tighter block mb-1">Major</span>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium">Marketing và Truyền thông</p>
+</div>
+<div>
+<span class="font-label-md text-label-md text-primary uppercase tracking-tighter block mb-1">Institution</span>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium">HSB - VNU (Trường Quản trị và Kinh doanh - ĐHQGHN)</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex justify-between items-center">
+<div class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-md text-label-md">
+                                        Batch 2020-2024
+                                    </div>
+<a class="text-primary hover:underline font-label-md text-label-md" href="#">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Core Competencies -->
+<section class="bg-surface-container-low border border-outline-variant/30 p-gutter rounded-lg">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6 border-b border-outline-variant/20 pb-2">Core Competencies</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest border border-outline-variant text-[10px] uppercase font-bold px-3 py-1 text-on-surface-variant">Strategy</span>
+<span class="bg-surface-container-highest border border-outline-variant text-[10px] uppercase font-bold px-3 py-1 text-on-surface-variant">Media Relations</span>
+<span class="bg-surface-container-highest border border-outline-variant text-[10px] uppercase font-bold px-3 py-1 text-on-surface-variant">Content Marketing</span>
+<span class="bg-surface-container-highest border border-outline-variant text-[10px] uppercase font-bold px-3 py-1 text-on-surface-variant">Digital Analytics</span>
+<span class="bg-surface-container-highest border border-outline-variant text-[10px] uppercase font-bold px-3 py-1 text-on-surface-variant">Brand Identity</span>
+</div>
+</section>
+<!-- Latest Entry Section -->
+<section class="bg-surface-container-high p-gutter rounded-lg relative overflow-hidden">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/5 rounded-full blur-2xl"></div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-4">Latest Entry</h3>
+<div class="group cursor-pointer">
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Oct 24, 2024</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight mb-2 group-hover:text-primary transition-colors">Campaign Audit: Sustainable Fashion Tech</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/70 line-clamp-2">A deep dive into the recent PR campaign for Echo Threads, analyzing multi-channel engagement...</p>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="ml-64 bg-surface-container-low border-t border-outline-variant/20 py-12 px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Academic Portfolio</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">© 2024 Institutional Archives. All Rights Reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Help Desk</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for sidebar tabs
+        document.querySelectorAll('aside a').forEach(link => {
+            link.addEventListener('mousedown', () => {
+                link.classList.add('scale-[0.98]');
+            });
+            link.addEventListener('mouseup', () => {
+                link.classList.remove('scale-[0.98]');
+            });
+            link.addEventListener('mouseleave', () => {
+                link.classList.remove('scale-[0.98]');
+            });
+        });
+
+        // Simple scroll spy behavior for Top Bar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
