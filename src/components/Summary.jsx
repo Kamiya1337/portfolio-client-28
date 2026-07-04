@@ -36,8 +36,8 @@ export default function Summary() {
           <div className="sticky top-28 border border-border-light bg-paper p-8">
             <h3 className="border-b border-border-light pb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-charcoal">Thông Tin Lưu Trữ</h3>
             <div className="mt-8 space-y-6">
-              <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Ngày ghi chú</p><p className="mt-2 text-sm">24 Tháng 05, 2024</p></div>
-              <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Học kỳ</p><p className="mt-2 text-sm">Học kỳ II - 2023-2024</p></div>
+              <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Ngày ghi chú</p><p className="mt-2 text-sm">24 Tháng 06, 2026</p></div>
+              <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Học kỳ</p><p className="mt-2 text-sm">Học kỳ II - 2025-2026</p></div>
               <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Trạng thái</p><p className="mt-2 text-sm font-bold uppercase tracking-[0.08em] text-rose">Hoàn tất lưu trữ</p></div>
             </div>
             <div className="mt-10 border border-border-light bg-blush p-4 text-xs italic leading-6 text-muted-dark">Portfolio này là minh chứng cho sự nỗ lực không ngừng và sự minh bạch trong học thuật.</div>
